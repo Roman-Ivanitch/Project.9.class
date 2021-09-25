@@ -5,7 +5,6 @@
 Красикова Романа RassirHakerCorporation@mail.ru 
 
 Страница проекта на GitHab - https://github.com/Roman-Ivanitch/Project.9.class
-
   Схемы, фото, прогграмный код, проект.dos, призентация.
 
 Страница проекта эектронной начинки в EasyEDA -  https://easyeda.com/RassirHaker/10-class
