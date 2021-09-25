@@ -12,7 +12,7 @@
 #define NET1 5                   // пин подключения кнопки выбора сети 1              network - сеть
 #define NET2 13                   // пин подключения кнопки выбора сети 2
 
-char auth[] = "tdVrFTq5xevmGb6Vquy5L0w4zGSrG_6u";   // Токен приложения Blynk      лампа
+char auth[] = "ваш токен блинк";   // Токен приложения Blynk      лампа
 
 char ssid[] = "wi-fi-home-0000575";                  // Название первой сети wi-fi          сеть 0
 char pass[] = "7851xdwifi";                          // Пароль WiFi
