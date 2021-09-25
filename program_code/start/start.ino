@@ -15,13 +15,13 @@
 char auth[] = "ваш токен блинк";   // Токен приложения Blynk      лампа
 
 char ssid[] = "wi-fi-home-0000575";                  // Название первой сети wi-fi          сеть 0
-char pass[] = "7851xdwifi";                          // Пароль WiFi
+char pass[] = "пароль";                              // Пароль WiFi
 
 char ssid1[] = "A30";                                // Название второй сети wi-fi         сеть 1
 char pass1[] = "87651234";                           // Пароль WiFi
 
 char ssid2[] = "Smart-Staart";                       // Название третьей сети wi-fi         сеть 2
-char pass2[] = "Hack.system";                        // Пароль WiFi
+char pass2[] = "пароль";                             // Пароль WiFi
 
 int brightnes = 127.5; // Изначальная ярколсть подсветки (от 0 до 255)
 int brightnes1 = 127.5;// Изначальная ярколсть лампы     (от 0 до 255)
@@ -61,7 +61,7 @@ void setup() {
 
   if      (digitalRead(NET1) == 1) Blynk.begin(auth, ssid1, pass1);   // выбор сети                      
   else if (digitalRead(NET2) == 1) Blynk.begin(auth, ssid2, pass2);   // Запуск Blynk (подключение,токен,WiFi,пароль) в зависимости от кнопки           
-  else Blynk.begin(auth, ssid, pass);                                 // по умолчанию*
+  else    Blynk.begin(auth, ssid, pass);                              // по умолчанию*
  
     
   LEDS.setBrightness(max_bright);                      // Ограничить максимальную яркость                         
@@ -73,6 +73,6 @@ void setup() {
 
 void loop() {
   Blynk.run();    // работа через интернет 
- light_lamp();   // работа света
+  light_lamp();   // работа света
   mod ();         // работа режимов подсветки
 }
