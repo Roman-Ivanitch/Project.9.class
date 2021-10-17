@@ -59,12 +59,12 @@ void setup() {
   pinMode(LED, OUTPUT);                 // Пин лампы в режиме выхода
   pinMode(LED1, OUTPUT);                // пин реле лампы
 
-  if      (digitalRead(NET1) == 1) Blynk.begin(auth, ssid1, pass1);   // выбор сети                      
-  else if (digitalRead(NET2) == 1) Blynk.begin(auth, ssid2, pass2);   // Запуск Blynk (подключение,токен,WiFi,пароль) в зависимости от кнопки           
+  if      (digitalRead(NET1) == 1) Blynk.begin(auth, ssid1, pass1);   // выбор сети
+  else if (digitalRead(NET2) == 1) Blynk.begin(auth, ssid2, pass2);   // Запуск Blynk (подключение,токен,WiFi,пароль) в зависимости от кнопки
   else    Blynk.begin(auth, ssid, pass);                              // по умолчанию*
- 
-    
-  LEDS.setBrightness(max_bright);                      // Ограничить максимальную яркость                         
+
+
+  LEDS.setBrightness(max_bright);                      // Ограничить максимальную яркость
   LEDS.addLeds<WS2811, LED_DT, GRB>(leds, LED_COUNT);  // Настрйоки для нашей ленты (ленты на WS2811, WS2812, WS2812B)
   one_color_all(0, 0, 0);                              // Погасить все светодиоды
   LEDS.show();                                         // Отослать команду
@@ -72,7 +72,7 @@ void setup() {
 }
 
 void loop() {
-  Blynk.run();    // работа через интернет 
+  if (!Blynk.connected()){ Blynk.run();}    // работа через интернет
   light_lamp();   // работа света
   mod ();         // работа режимов подсветки
 }
