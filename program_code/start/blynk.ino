@@ -14,10 +14,12 @@ BLYNK_WRITE(V4) {               // Режим подсветки
   mode =  param.asInt();
 }
 BLYNK_WRITE(V5) {               // Яркость подсветки
-  brightnes = param.asInt();
+  int brightnes_web = param.asInt();
+  brightnes = map(brightnes_web,0,100,0,255);
 }
 BLYNK_WRITE(V6) {                // Яркость света
-  brightnes1 = param.asInt();
+  int brightnes1_web = param.asInt();
+  brightnes1 = map(brightnes1_web,0,100,0,1023);  // если у тебя вопрос зачем это, то это для Алисы 
 }
 BLYNK_WRITE(V7) {               // Режим зебра
   red = param[0].asInt();
