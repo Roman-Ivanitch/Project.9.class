@@ -9,28 +9,20 @@
 #define LED 14                  // Пин подключения лампы
 #define LED1 12                 // Пин подключения реле
 
-#define NET1 5                   // пин подключения кнопки выбора сети 1              network - сеть
-#define NET2 13                   // пин подключения кнопки выбора сети 2
+#define NET1 5                  // пин подключения кнопки выбора сети 1              network - сеть
+#define NET2 13                 // пин подключения кнопки выбора сети 2
 
 char auth[] = "токен";          // лампа Blynk-cloud.com // Токен приложения Blynk
 char auth_server[] = "токен";   // лампа local-server    // Токен приложения Blynk
 
-char ssid_home[] = "wi-fi-home-0000575";                  // сеть wi-fi
-char pass_home[] = "7851xdwifi";                          // Пароль WiFi
+char ssid_home[] = "wi-fi-home-0000575";  // сеть wi-fi
+char pass_home[] = "7851xdwifi";          // Пароль WiFi
 
+char ssid_phone[] = "A30";                // Мобильная точка доступа WiFi
+char pass_phone[] = "87651234";           // Пароль WiFi
 
-char ssid_phone[] = "A30";                                // Мобильная точка доступа WiFi
-char pass_phone[] = "87651234";                           // Пароль WiFi
-
-
-char ip_local[] = "192.168.88.200";                      // свой server - local ip
-char ip_net[] = "ip адрес";                        // свой server - internet ip
-
-int brightnes = 127.5; // Изначальная ярколсть подсветки (от 0 до 255)
-int brightnes1 = 127.5;// Изначальная ярколсть лампы     (от 0 до 255)
-int lightnes = 0;      // Изначальное вкл/выкл подсветки ( 0 - выкл, 1 - вкл )
-int light = 0;         // Изначальное вкл/выкл лампы     ( 0 - выкл, 1 - вкл )
-int  mode = 3;         // Изначальный режим подсветки
+char ip_local[] = "192.168.88.200";       // свой server - local ip
+char ip_net[] = "ip адрес";               // свой server - internet ip
 
 ////////////////////////////////Служебные переменные////////////////////////////////
 struct CRGB leds[LED_COUNT];
@@ -52,6 +44,12 @@ int thishue   =  0;
 int ibright   =  0;             //-BRIGHTNESS (0-255)
 
 float tcount = 0.0;          //-INC VAR FOR SIN LOOPS
+//                         при первом включении
+int brightnes = 127.5; // Изначальная ярколсть подсветки (от 0 до 255)
+int brightnes1 = 127.5;// Изначальная ярколсть лампы     (от 0 до 255)
+int lightnes = 0;      // Изначальное вкл/выкл подсветки ( 0 - выкл, 1 - вкл )
+int light = 0;         // Изначальное вкл/выкл лампы     ( 0 - выкл, 1 - вкл )
+int  mode = 3;         // Изначальный режим подсветки
 
 void setup() {
   pinMode(NET1, INPUT);                 // пин кнопки выбоа сети1 как вход

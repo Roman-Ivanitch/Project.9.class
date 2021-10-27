@@ -1,0 +1,7 @@
+1) Папку libraries брось в папку с Arduino IDE.
+
+2) Если не установленна плата ESP8266 в Arduino IDE то пройди по ссылке там рассказанно как это сделать
+https://esp8266.ru/arduino-ide-esp8266/#setup
+
+Мои видео на тему базовых знаний
+https://www.youtube.com/playlist?list=PLsOCdSkMN4g12TOuA3c6-NCoinkyA0isy

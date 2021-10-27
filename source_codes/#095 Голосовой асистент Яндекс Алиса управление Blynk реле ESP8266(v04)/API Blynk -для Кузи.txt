@@ -1,0 +1,12 @@
+для Sonoff RF с моей прошивкой
+http://blynk-cloud.com/auth_token/update/V0?value={value}
+
+
+для ESP2866 (NodeMCU 1.0 (ESP-12E Module) с моей прошивкой
+http://blynk-cloud.com/auth_token/update/V1?value={value}
+
+http://blynk-cloud.com/auth_token/update/V2?value={value}
+
+http://blynk-cloud.com/auth_token/update/V3?value={value}	
+
+http://blynk-cloud.com/auth_token/update/V4?value={value}
