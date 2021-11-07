@@ -1,0 +1,1 @@
+# БОЛЕЕ АКТУАЛЬНАЯ ВЕРСИЯ НА [EasyEDA](https://easyeda.com/RassirHaker/10-class)
