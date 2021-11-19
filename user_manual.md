@@ -15,9 +15,7 @@
 
 ![токен](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/blynk_%D1%82%D0%BE%D0%BA%D0%B5%D0%BD.jpg)
 
-5. Скачать и установать [arduino IDE](https://www.arduino.cc/en/software), [гайд](https://alexgyver.ru/arduino-first/)
-
-![]()
+5. Скачать и установить [arduino IDE](https://www.arduino.cc/en/software), [гайд](https://alexgyver.ru/arduino-first/) ![]()
 
 6. Скачать репозиторий с прошивкой с [github](https://github.com/Roman-Ivanitch/Project.9.class)
 

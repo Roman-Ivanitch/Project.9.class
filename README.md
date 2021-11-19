@@ -7,6 +7,7 @@ ___
 + [Страница проекта на GitHab](https://github.com/Roman-Ivanitch/Project.9.class) 
 + [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
 + [Страница проекта эектронной начинки на oshwlab](https://oshwlab.com/RassirHaker/10-class)
++ [Руководство по эксплуатации](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
 ## :bulb: Что это такое
 Лампа, крепящаяся на стенку над столом. На лампе 2 ряда светодиодной 12-24 вт. Ленты и ряд адресной светодиодной ленты (60 LED/м) отрезками 730 мм. 
 Управляется через телефон приложением Blynk (не новым Blynk IoT). Лента уложена в продольные канавки (пазы), 
