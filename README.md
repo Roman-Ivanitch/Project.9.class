@@ -5,7 +5,7 @@ ___
 ## Проект 10 класс Умная лампа V2.
 Красикова Романа RassirHakerCorporation@mail.ru 
 + [Руководство по эксплуатации](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
-+ [Страница проекта на GitHub](https://github.com/Roman-Ivanitch/Project.9.class) 
++ [Настройки в прошивке](https://github.com/Roman-Ivanitch/Project.9.class/tree/main/program_code#readme) 
 + [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
 + [Страница проекта эектронной начинки на oshwlab](https://oshwlab.com/RassirHaker/10-class)
 
