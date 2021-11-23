@@ -1,17 +1,14 @@
 # Project.9.class 
 ![logo](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/IoT.jpg)
 ___
-![3d](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/3D_model.png)
 ## Проект 9 класс Рабочая лампа.
 ## Проект 10 класс Умная лампа V2.
 Красикова Романа RassirHakerCorporation@mail.ru 
++ [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
 + [Руководство по настройки](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
 + [Настройки в прошивке](https://github.com/Roman-Ivanitch/Project.9.class/tree/main/program_code#readme) 
 + [Источники](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/sources_of_information/README.md)
 + [Исходники](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/source_codes/README.md)
-+ [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
-+ [Страница проекта эектронной начинки на oshwlab](https://oshwlab.com/RassirHaker/10-class)
-
 ## :bulb: Что это такое
 Лампа, крепящаяся на стенку над столом. На лампе 2 ряда светодиодной 12-24 вт. Ленты и ряд адресной светодиодной ленты (60 LED/м) отрезками 730 мм. 
 Управляется через телефон приложением Blynk (не новым Blynk IoT). Лента уложена в продольные канавки (пазы), 
@@ -26,6 +23,7 @@ ___
 Более подробное описание: 
 + [Проект_9_класс.docx](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_9_%D0%BA%D0%BB%D0%B0%D1%81%D1%81.docx) проект на олимпиаду по технологии 9 класс
 + [Проект_10_класс.docx](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_10_%D0%BA%D0%BB%D0%B0%D1%81%D1%81.docx) проект на олимпиаду по технологии 10 класс
+![3d](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/3D_model.png)
 ## QR-code страницы проекта на github 
 ![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/QR-code.png)
 ___
