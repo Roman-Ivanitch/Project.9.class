@@ -7,6 +7,8 @@ ___
 Красикова Романа RassirHakerCorporation@mail.ru 
 + [Руководство по настройки](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
 + [Настройки в прошивке](https://github.com/Roman-Ivanitch/Project.9.class/tree/main/program_code#readme) 
++ [Источники](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/sources_of_information/README.md)
++ [Исходники](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/source_codes/README.md)
 + [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
 + [Страница проекта эектронной начинки на oshwlab](https://oshwlab.com/RassirHaker/10-class)
 
