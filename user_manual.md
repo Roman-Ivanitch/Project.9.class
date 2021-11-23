@@ -1,25 +1,25 @@
 # Руководство по эксплуатации 
 1. Скачать приложение [Blynk](https://play.google.com/store/apps/details?id=cc.blynk)
 
-![blynk_pleymarket](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/blynk_pleymarket.jpg)
+![blynk_pleymarket](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_pleymarket.jpg)
 
 2. Зарегистрироваться/войти на сервер (blync-cloud.com или свой локальный)
 
-![blynk_login](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/blynk_login.jpg)
+![blynk_login](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_login.jpg)
 
 3. Создать устройство esp и тип подключения WIfi
 
-![blynk_adddevice](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/blynk_adddevice.jpg)
+![blynk_adddevice](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_adddevice.jpg)
 
 4. Получить токен устройства на почту указуную при регистрации
 
-![токен](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/blynk_%D1%82%D0%BE%D0%BA%D0%B5%D0%BD.jpg)
+![токен](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_token.jpg)
 
 5. Скачать и установить [arduino IDE](https://www.arduino.cc/en/software), [гайд](https://alexgyver.ru/arduino-first/) ![]()
 
 6. Скачать репозиторий с прошивкой с [github](https://github.com/Roman-Ivanitch/Project.9.class)
 
-![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/QR-code.png)
+![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/QR-code.png)
 
 7. Открыть файл, и указать имя и пароль Wifi и токен который получили на почту
 
@@ -48,7 +48,7 @@ char ip_net[] = "ip адрес";               // свой server - internet ip
 
 10. В приложении настроить виджеты и виртуальные пины
 
-![blynk_wigets](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/blynk_wigets.jpg)
+![blynk_wigets](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_wigets.jpg)
 
 11. Тумблером на устройстве выбрать сеть wifi настроеные в прошивке ![]()
 

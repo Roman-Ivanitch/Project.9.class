@@ -1,10 +1,11 @@
 # Project.9.class 
-![logo](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/IoT.jpg)
+![logo](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/IoT.jpg)
 ___
+![3d](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/3D_model.png)
 ## Проект 9 класс Рабочая лампа.
 ## Проект 10 класс Умная лампа V2.
 Красикова Романа RassirHakerCorporation@mail.ru 
-+ [Руководство по эксплуатации](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
++ [Руководство по настройки](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
 + [Настройки в прошивке](https://github.com/Roman-Ivanitch/Project.9.class/tree/main/program_code#readme) 
 + [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
 + [Страница проекта эектронной начинки на oshwlab](https://oshwlab.com/RassirHaker/10-class)
@@ -24,7 +25,7 @@ ___
 + [Проект_9_класс.docx](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_9_%D0%BA%D0%BB%D0%B0%D1%81%D1%81.docx) проект на олимпиаду по технологии 9 класс
 + [Проект_10_класс.docx](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_10_%D0%BA%D0%BB%D0%B0%D1%81%D1%81.docx) проект на олимпиаду по технологии 10 класс
 ## QR-code страницы проекта на github 
-![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/QR-code.png)
+![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/QR-code.png)
 ___
 
 Репозиторий не переименован, потому что на печатных пплатах я указал эту ссылку. Если переименую ссылка по url будет не доступна, а платы уже изготовлены. 
