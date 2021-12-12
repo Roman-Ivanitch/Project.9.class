@@ -5,10 +5,11 @@ ___
 ## Проект 10 класс Умная лампа V2.
 Красикова Романа RassirHakerCorporation@mail.ru 
 + [Страница проекта эектронной начинки в EasyEDA](https://easyeda.com/RassirHaker/10-class)
-+ [Руководство по настройки](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
++ [Сборка лампы](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/dimensional_drawing/README.md)
 + [Настройки в прошивке](https://github.com/Roman-Ivanitch/Project.9.class/tree/main/program_code#readme) 
-+ [Источники](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/sources_of_information/README.md)
-+ [Исходники](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/source_codes/README.md)
++ [Руководство по настройке](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/user_manual.md)
++ [Источники информации](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/sources_of_information/README.md)
++ [Исходники кода](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/source_codes/README.md)
 ## :bulb: Что это такое
 Лампа, крепящаяся на стенку над столом. На лампе 2 ряда светодиодной 12-24 вт. Ленты и ряд адресной светодиодной ленты (60 LED/м) отрезками 730 мм. 
 Управляется через телефон приложением Blynk (не новым Blynk IoT). Лента уложена в продольные канавки (пазы), 
