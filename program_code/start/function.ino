@@ -1,13 +1,8 @@
-void light_lamp () {                      // свет, функция рабочей лампы
-  if (brightnes1 >= 1000) {
-    digitalWrite (LED1, light ? 255 : 0);
-  } else {
-    digitalWrite (LED1, 0);
-  }
+void light_lamp () { // свет
   analogWrite(LED, light ? brightnes1 : 0);
 }
 
-void mod () {                             // выбор режима свечния, для всех моих "умных" лламп
+void mod () {                             // выбор режима свечния
   if (lightnes == 1) {
     switch (mode) {
       case 1: one_color_all(0, 0, 0); LEDS.show(); break;  // Сбросить цвет
@@ -17,7 +12,6 @@ void mod () {                             // выбор режима свечн�
       case 5: ems_lightsALL(); break;                      // Вращается половина красных и половина синих
       case 6: ems_lightsSTROBE(); break;                   // Полицейская мигалка
 
-      
       case 7: one_color_all(brightnes, 0, 0); LEDS.show(); break;             // Красный
       case 8: one_color_all(brightnes, brightnes / 2, 0); LEDS.show(); break; // оранжевый
       case 9: one_color_all(brightnes, brightnes, 0); LEDS.show(); break;     // Жёлтый
@@ -37,7 +31,7 @@ void mod () {                             // выбор режима свечн�
       case 18: one_color_all(red, green, blue); LEDS.show(); break;  // зебра
     }
   } else {
-    one_color_all(0, 0, 0);
+    one_color_all(0, 0, 0);   // если не включен ни один режим, то лента не горит
     LEDS.show();
 
   }

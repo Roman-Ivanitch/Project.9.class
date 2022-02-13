@@ -1,28 +1,32 @@
 #include <BlynkSimpleEsp8266.h>  // Библиотека для работы с сервисом Blynk
 #include <ESP8266WiFi.h>         // Библиотека для работы c ESP
 #include <FastLED.h>             // Библиотека для работы с адресной лентой
-
+#include <GyverPortal.h>
+#include <EEPROM.h>
 //------------------------------------НАСТРОЙКИ------------------------------------
-#define LED_COUNT 50            // Число светодиодов в кольце/ленте
+#define LED_COUNT 52            // Число светодиодов в кольце/ленте
 
-#define LED_DT 4                // Пин, куда подключен DIN ленты
-#define LED 14                  // Пин подключения лампы
-#define LED1 12                 // Пин подключения реле
+#define LED_DT 14               // Пин, куда подключен DIN ленты
+#define LED 12                  // Пин подключения лампы
 
 #define NET1 5                  // пин подключения кнопки выбора сети 1              network - сеть
 #define NET2 13                 // пин подключения кнопки выбора сети 2
 
-char auth[] = "токен";          // лампа Blynk-cloud.com // Токен приложения Blynk
-char auth_server[] = "токен";   // лампа local-server    // Токен приложения Blynk
+struct Data {
+  char token[40];  // учетные данные, если запускаете впервый раз, 
+  char ssid[20];   // то на web странице вводите токен из приложения Blynk, 
+  char pass[20];   // название и пароль wi-fi/точки доступа, 
+  char server[20]; // сервер Blynk (стандартный blynk-cloud.com) или же свой (ip сервера)
+  uint16_t port;   // и порт ( обычно 8080, или 80, или если есть ssl, то 443 вроде...)
 
-char ssid_home[] = "wi-fi-home-0000575";  // сеть wi-fi
-char pass_home[] = "7851xdwifi";          // Пароль WiFi
-
-char ssid_phone[] = "A30";                // Мобильная точка доступа WiFi
-char pass_phone[] = "87651234";           // Пароль WiFi
-
-char ip_local[] = "192.168.88.200";       // свой server - local ip
-char ip_net[] = "ip адрес";               // свой server - internet ip
+  char token1[40];
+  char ssid1[20];
+  char pass1[20];
+  char server1[20];
+  uint16_t port1;
+};
+Data data;
+GyverPortal portal;
 
 ////////////////////////////////Служебные переменные////////////////////////////////
 struct CRGB leds[LED_COUNT];
@@ -44,29 +48,29 @@ int thishue   =  0;
 int ibright   =  0;             //-BRIGHTNESS (0-255)
 
 float tcount = 0.0;          //-INC VAR FOR SIN LOOPS
-//                         при первом включении
-int brightnes = 127.5; // Изначальная ярколсть подсветки (от 0 до 255)
-int brightnes1 = 127.5;// Изначальная ярколсть лампы     (от 0 до 255)
-int lightnes = 0;      // Изначальное вкл/выкл подсветки ( 0 - выкл, 1 - вкл )
-int light = 0;         // Изначальное вкл/выкл лампы     ( 0 - выкл, 1 - вкл )
-int  mode = 3;         // Изначальный режим подсветки
+
+int brightnes;     // ярколсть подсветки (от 0 до 255)
+int brightnes1;    // ярколсть лампы     
+int lightnes;      // вкл/выкл подсветки 
+int light;         // вкл/выкл лампы     
+int  mode = 3;     // режим подсветки
 
 void setup() {
-  pinMode(NET1, INPUT);                 // пин кнопки выбоа сети1 как вход
-  pinMode(NET2, INPUT);                 // пин кнопки выбоа сети2 как вход
-
+  EEPROM.begin(500);     // читаем данные из памяти
+  EEPROM.get(0, data);
+  
   pinMode(LED, OUTPUT);                 // Пин лампы в режиме выхода
-  pinMode(LED1, OUTPUT);                // пин реле лампы
-
-  // Запуск Blynk (подключение,токен,WiFi,пароль) в зависимости от кнопки // выбор сети
-  if      (digitalRead(NET1) == 1) Blynk.begin(auth, ssid_phone, pass_phone);   // мобил точка доступа и Blynk-cloud.com
-  else if (digitalRead(NET2) == 1) Blynk.begin(auth_server, ssid_phone, pass_phone, ip_net, 8080); // мобил точка доступа и свой сервер через интернет
-  else Blynk.begin(auth_server, ssid_home, pass_home, ip_local, 8080);                          // точка доступа wifi  и свой локальный сервер
-
+  pinMode(NET1, INPUT);                 // пин тумблера для настройки через web
+  pinMode(NET2, INPUT);                 // пин тумблера выбоа сети2 
+  
   LEDS.setBrightness(max_bright);                      // Ограничить максимальную яркость
   LEDS.addLeds<WS2811, LED_DT, GRB>(leds, LED_COUNT);  // Настрйоки для нашей ленты (ленты на WS2811, WS2812, WS2812B)
   one_color_all(0, 0, 0);                              // Погасить все светодиоды
   LEDS.show();                                         // Отослать команду
+  
+  if (digitalRead(NET1) == 1) web(); // положение тумблера для web интерфейса 
+  else if (digitalRead(NET2) == 1)Blynk.begin(data.token1, data.ssid1, data.pass1, data.server1, data.port1); 
+  else Blynk.begin(data.token, data.ssid, data.pass, data.server, data.port); // центральное положение тумблера
 }
 
 void loop() {
