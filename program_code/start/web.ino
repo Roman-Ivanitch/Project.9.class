@@ -24,10 +24,12 @@ void process () {       // обработка ввода
       lightnes = portal.getCheck("btnColor");
     }
     if (portal.click("brightness")) {    // яркость света
-      brightnes1 = portal.getInt("brightness"); // получаем данные ползунка
+      int brightnes1_web = portal.getInt("brightness"); // получаем данные ползунка
+      brightnes1 = map(brightnes1_web,0,100,0,1023);
     }
     if (portal.click("brightnessColor")) {    // яркость подсветки
-      brightnes = portal.getInt("brightnessColor");
+      int brightnes_web = portal.getInt("brightnessColor");
+      brightnes = map(brightnes_web,0,100,0,255);
     }
 
     // обработка и сохранение учетных данных wifi и Blynk
@@ -90,7 +92,7 @@ void build() {    // сама web страница
   add.LABEL("lighting: ");
   add.SLIDER("brightnessColor", brightnes, 0, 100, 1);
   add.BREAK();
-  add.SELECT("sel", "режим 1,режим 2,режим 3" ); 
+  add.SELECT("sel", "режим 1,режим 2,режим 3" );
   add.FORM_END();               // завершить форму
 
 
@@ -124,3 +126,23 @@ void build() {    // сама web страница
 
   BUILD_END();                  // завершить построение
 }
+
+/*
+ * EmbUI https://github.com/DmytroKorniienko/EmbUI
+Асинхронная, стабильная, с открытым исходным кодом, есть встроенный клиент mqtt, чутка своеобразен в написании кода, с авто построением интерфейса по коду, можно писать кастомные модули, есть обратная связь, есть авторизация при входе
+Написанные на нем популярные для своего круга проект лампы https://github.com/DmytroKorniienko/FireLamp_JeeUI
+
+CRMui https://github.com/WonderCRM/CRMui3
+Асинхронная, стабильная, с полу открытым исходным кодом, есть баннер не для коммерческого использования, есть подобие pwa и прост в написании кода, с авто построением интерфейса по коду, красивый с темной темой возможно менять цвета фона, нет возможности писать кастомные модули, есть обратная связь, есть авторизация при входе
+На его старом интерфейсе написаны часы https://cloud.mail.ru/public/5eHE/dCHUyqrr1/WiFi-CLOCK/
+
+JeeUI https://github.com/jeecrypt/JeeUIFramework
+Прародитель EmbUI CRMui
+На нем был написан прикольный проектик часов который перешел в CRMui
+Все возможности как EmbUI, не полностью доделанная есть кое какие баги, первая версия красивая в плане css, с авто построением интерфейса по коду, нет возможности писать кастомные модули, есть приложение
+
+WiFiManager https://github.com/tzapu/WiFiManager
+Нет асинхронности, большей части ее используют для написания своего проекта для упрощения кода, интерфейс нужно писать или изменить предлагаемый, но есть авто построение меню. Похоже на GyverPortal
+
+Если развивается то в правильную сторону
+ */
