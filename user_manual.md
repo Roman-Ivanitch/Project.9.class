@@ -1,27 +1,27 @@
 # Руководство по эксплуатации 
 1. Скачать приложение [Blynk](https://play.google.com/store/apps/details?id=cc.blynk)
 
-![blynk_pleymarket](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_pleymarket.jpg)
+![blynk_pleymarket](/images/blynk_pleymarket.jpg)
 
-2. Зарегистрироваться/войти на сервер (blync-cloud.com или свой локальный)
+1. Зарегистрироваться/войти на сервер (blync-cloud.com или свой локальный)
 
-![blynk_login](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_login.jpg)
+![blynk_login](/images/blynk_login.jpg)
 
-3. Создать устройство esp и тип подключения WIfi
+1. Создать устройство esp и тип подключения WIfi
 
-![blynk_adddevice](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_adddevice.jpg)
+![blynk_adddevice](/images/blynk_adddevice.jpg)
 
-4. Получить токен устройства на почту указуную при регистрации
+1. Получить токен устройства на почту указуную при регистрации
 
-![токен](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_token.jpg)
+![токен](/images/blynk_token.jpg)
 
-5. Скачать и установить [arduino IDE](https://www.arduino.cc/en/software), [гайд](https://alexgyver.ru/arduino-first/) ![]()
+1. Скачать и установить [arduino IDE](https://www.arduino.cc/en/software), [гайд](https://alexgyver.ru/arduino-first/) ![]()
 
-6. Скачать репозиторий с прошивкой с [github](https://github.com/Roman-Ivanitch/Project.9.class)
+2. Скачать репозиторий с прошивкой с [github](https://github.com/Roman-Ivanitch/Project.9.class)
 
-![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/QR-code.png)
+![Qr-code](/images/QR-code.png)
 
-7. Открыть файл, и указать имя и пароль Wifi и токен который получили на почту
+1. Открыть файл, и указать имя и пароль Wifi и токен который получили на почту
 
 ```C++
 char ssid_home[] = "wi-fi-home-0000575";  // сеть wi-fi
@@ -48,10 +48,10 @@ char ip_net[] = "ip адрес";               // свой server - internet ip
 
 10. В приложении настроить виджеты и виртуальные пины
 
-![blynk_wigets](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/blynk_wigets.jpg)
+![blynk_wigets](/images/blynk_wigets.jpg)
 
-11. Тумблером на устройстве выбрать сеть wifi настроеные в прошивке ![]()
+1.  Тумблером на устройстве выбрать сеть wifi настроеные в прошивке ![]()
 
-12. Включить устьройство кнопкой взади
+2.  Включить устьройство кнопкой взади
 
 Готово!

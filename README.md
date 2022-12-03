@@ -1,5 +1,5 @@
 # Project.9.class 
-![logo](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/IoT.jpg)
+![logo](/images/IoT.jpg)
 ___
 ## Проект 9 класс Рабочая лампа.
 ## Проект 10 класс Умная лампа V2.
@@ -26,7 +26,7 @@ ___
 + [Проект_10_класс.docx](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_10_%D0%BA%D0%BB%D0%B0%D1%81%D1%81.docx) проект на олимпиаду по технологии 10 класс
 ![3d](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/3D_model.png)
 ## QR-code страницы проекта на github 
-![Qr-code](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/QR-code.png)
+![Qr-code](/images/QR-code.png)
 ___
 
 Репозиторий не переименован, потому что на печатных пплатах я указал эту ссылку. Если переименую ссылка по url будет не доступна, а платы уже изготовлены. 

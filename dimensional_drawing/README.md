@@ -1,5 +1,5 @@
 # Конструкция и сборка лампы
-![lamp](https://github.com/Roman-Ivanitch/Project.9.class/blob/main/images/3D_model.png)
+![lamp](../images/3D_model.png)
 ## Детали
 ---
 Для лампы есть чертежи, 3D модели и эскизы. 
